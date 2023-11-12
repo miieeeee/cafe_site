@@ -1,9 +1,0 @@
-@charset "UTF-8";
-.footer {
-  padding: 15px 10px;            /* 内余白を上下15px、左右10pxに */
-}
-
-.copy {
-  text-align: center;            /* 文字を中央揃えに */
-  font-size: 1.0rem;             /* 文字サイズを1remに */
-}
