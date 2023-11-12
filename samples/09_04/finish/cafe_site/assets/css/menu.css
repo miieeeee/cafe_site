@@ -1,0 +1,94 @@
+@charset "UTF-8";
+.header.header-menu {
+  background: url(../img/menu/hero_menu.jpg) no-repeat center center/cover; /* 背景画像を指定 */
+}
+
+.wrapper {
+  max-width: 960px;               /* 最大の画面幅を960pxに */
+  margin: 0 auto;                 /* 外余白を上下0、左右自動に */
+  padding: 0 4%;                  /* 内余白を上下0、左右4%に */
+}
+
+.lead {
+  padding: 30px 0;                /* 内余白を上下30px、左右0に */
+}
+
+@media print, screen and (min-width: 768px) {
+  .lead {
+    width: 800px;                 /* 要素幅を800pxに */
+    margin: auto;                 /* 外余白を自動に */
+    text-align: center;           /* 文字を中央揃えに */
+  }
+}
+
+.lead-title {
+  font-size: 25px;                /* 文字サイズを25pxに */
+  margin-bottom: 10px;            /* 外余白の下部を10pxに */
+  font-weight: bold;              /* 文字を太字に */
+  line-height: 1.2;               /* 行の高さをフォントサイズの1.2倍に */
+  font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif; /* フォントの種類を指定 */
+}
+
+.menu {
+  padding: 15px 0;                /* 内余白を上下15px、左右0に */
+  border-bottom: 1px solid #eee;  /* 罫線を下部1px、実線、灰色で */
+  list-style: none;               /* リストの黒丸をなしに */
+}
+
+@media print, screen and (min-width: 768px) {
+  .menu-wrap {
+    display: -webkit-flex;        /* 子要素を並列に */
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;      /* flexで並べた要素を複数行に */
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .menu {
+    width: 33.33%;                /* 要素幅を33.33%に */
+    padding: 0 30px;              /* 内余白を上下0px、左右30pxに */
+    margin-bottom: 60px;          /* 外白下部を60pxに */
+    border-bottom: none;          /* 罫線下部を無しに */
+  }
+}
+
+.menu-img {
+  margin-bottom: 20px;            /* 外白下部を20pxに */
+}
+
+.menu-name-en {
+  font-size: 20px;                /* 文字サイズを20pxに */
+  font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif; /* フォントの種類を指定 */
+  font-weight: bold;              /* 文字を太字に */
+  margin-bottom: 15px;            /* 外余白の下部を15pxに */
+}
+
+.menu-name-ja {
+  font-size: 14px;                /* 文字サイズを14pxに */
+  font-weight: bold;              /* 文字を太字に */
+  margin-bottom: 15px;            /* 外余白の下部を15pxに */
+}
+
+.menu-price {
+  font-size: 14px;                /* 文字サイズを14pxに */
+  display: -webkit-flex;          /* 子要素を並列に */
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between; /* 並列になった要素の幅を均等に */
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.menu-price + .menu-price {
+  margin-top: 5px;                /* 外余白の下部を5pxに */
+}
+
+.menu-category {
+  margin-bottom: 60px;            /* 外余白の下部を60pxに */
+}
+
+@media print, screen and (min-width: 768px) {
+  .menu-category {
+    margin: 0 -30px 60px;         /* 外余白の上0, 左右-30px、下60pxに */
+  }
+}

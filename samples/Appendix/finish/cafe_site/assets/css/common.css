@@ -1,0 +1,168 @@
+@charset "UTF-8";
+.header {
+  position: relative;           /* 要素の配置を相対座標に指定 */
+  width: 100%;                  /* 要素の幅を100% */
+  height: 0;                    /* 要素の高さを0% */
+  padding-bottom: 100%;         /* 内余白の下部分を100% */
+  background: url(../img/top/hero_top.jpg) no-repeat center center/cover; /* 背景画像を領域を埋めるように、中央に配置 */
+}
+
+@media print, screen and (min-width: 768px) {
+   .header {
+     height: 400px;            /* 要素の高さを400pxに */
+     padding-bottom: 0;        /* 内余白の下部を0pxに */
+   }
+}
+
+.logo {
+  width: 60px;                  /* 要素の幅を60pxに */
+  padding: 10px;                /* 要素の内余白を10pxに */
+  background: #fff;             /* 背景色を白色に */
+  position: absolute;           /* 要素の配置を絶対座標に指定 */
+  top: 0;                       /* 上部分を基準点から0の位置に */
+  left: 20px;                   /* 左部分を基準点から20pxの位置に */
+}
+
+@media print, screen and (min-width: 768px) {
+  .logo {
+    width: 110px;               /* 要素の幅を110pxに */
+    padding: 20px;              /* 要素の内余白を20pxに */
+    left: 40px;                 /* 左部分を基準点から40pxの位置に */
+  }
+}
+
+.catch-copy, .page-title {
+  text-align: center;           /* 文字を中央揃えに */
+  width: 100%;                  /* 要素の幅を画面いっぱいに */
+  color: #fff;                  /* 文字色を白色に */
+  font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif; /* フォントの種類を指定 */
+  font-size: 6vw;               /* フォントをビューポートの6%に */
+  font-weight: bold;            /* 文字を太字に */
+  position: absolute;           /* 要素の配置位置を絶対座標に指定 */
+  top: 50%;                     /* 上部分を基準点から50%の位置に */
+  left: 0;                      /* 左部分を基準点から0の位置に */
+  -webkit-transform: translate(0, -50%); /* 要素の位置を50%分だけ上に */
+  transform: translate(0, -50%);
+}
+
+.catch-copy span, .page-title span {
+  border-bottom: 3px solid #fff; /* 下部分の罫線を 3px、実線、白色に */
+  padding-bottom: 4px;           /* 下部分の余白を 4pxに */
+}
+
+@media print, screen and (min-width: 768px) {
+  .catch-copy, .page-title {
+    font-size: 50px;             /* 文字サイズを50pxに */
+  }
+}
+
+.heading02 {
+  text-align: center;            /* 文字を中央揃えに */
+  font-size: 16px;               /* 文字サイズを16pxに */
+  font-weight: bold;             /* 文字を太字に */
+  color: #000;                   /* 文字色を黒に */
+  font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif; /* フォントの種類を指定 */
+  margin-bottom: 20px;           /* 下部分の余白を 20pxに  */
+}
+
+@media print, screen and (min-width: 768px) {
+  .heading02 {
+    font-size: 20px;             /* 文字サイズを20pxに */
+    margin-bottom: 40px;         /* 下部分の余白を40pxに */
+  }
+}
+
+.heading02 span {
+  border-bottom: 3px solid #000; /* 下部分の罫線を 3px、実線、黒色に */
+  padding-bottom: 4px;           /* 下部分の余白を 4pxに */
+}
+
+.lead {
+  font-size: 14px;               /* 文字サイズを16pxに */
+  line-height: 2.0;              /* 行の高さをフォントサイズの2.0倍に */
+}
+
+.btn {
+  display: block;                /* 表示形式をブロックに */
+  text-align: center;            /* 文字を中央揃えに */
+  width: 200px;                  /* 要素の横幅を200pxに */
+  margin: 0 auto 60px;           /* 要素の外余白を上0、左右自動、下60pxに */
+  border: 2px solid #000;        /* 下部分の罫線を 2px、実線、黒色に */
+  text-decoration: none;         /* 文字の装飾を無しに */
+  padding: 13px 0 12px;          /* 要素の内余白を上13px、左右0、下12pxに */
+  font-weight: bold;             /* 文字を太字に */
+}
+
+@media print, screen and (min-width: 768px) {
+  .btn {
+    width: 400px;                /* 要素の横幅を400pxに */
+    padding: 20px 0;             /* 要素の内余白を上下20、左右0に */
+    font-size: 14px;             /* 文字サイズを14pxに */
+  }
+}
+
+.footer {
+  padding: 15px 10px;            /* 内余白を上下15px、左右10pxに */
+}
+
+@media print, screen and (min-width: 768px) {
+  .footer {
+    padding: 30px 10px;          /* 内余白を上下30px、左右10pxに */
+  }
+}
+
+.copy {
+  text-align: center;            /* 文字を中央揃えに */
+  font-size: 1.0rem;             /* 文字サイズを1remに */
+}
+
+.globalnav {
+  position: relative;            /* 表示位置を相対座標に */
+  padding: 0 10px;               /* 内余白を上下0、左右10pxに */
+  -webkit-transform: translate(0, -50%); /* 要素の位置を50%分だけ上に */
+  transform: translate(0, -50%);
+}
+
+.globalnav li {
+  display: table-cell;           /* 表示形式をテーブルセル形式に */
+  text-align: center;            /* 文字を中央揃えに */
+}
+
+.globalnav li:not(:first-child) {
+  border-left: 1px solid #000;   /* 罫線左を1px、実線、黒色に */
+}
+
+.globalnav li a {
+  font-size: 1.3rem;             /* 文字サイズを1.3remに */
+  display: block;                /* 表示形式をブロック形式に */
+  background: #fff;              /* 背景色を白色に */
+  text-decoration: none;         /* 文字装飾を無しに */
+  padding: 15px 0;               /* 内余白を上下15px、左右0px */
+}
+
+.globalnav li a:hover {
+  opacity: 1;                    /* 不透明度を1に */
+}
+
+@media print, screen and (min-width: 768px) {
+  .globalnav li a:hover {
+    background: #000;            /* 背景色を黒色に */
+    color: #fff;                 /* 文字色を白色に */
+  }
+}
+
+.globalnav-list {
+  width: 100%;                   /* 要素の幅を100%に */
+  max-width: 800px;              /* 要素の最大幅を800pxに */
+  margin: 0 auto;                /* 外余白の上下を0、左右を自動に */
+  display: table;                /* 表示形式をテーブル形式に */
+  table-layout: fixed;           /* テーブルレイアウトを固定に */
+  border: 1px solid #000;        /* 罫線を1px、実線、黒色に */
+}
+
+.twitter-btn {
+  display: block;                /* 表示形式をブロックに */
+  width: 40px;                   /* 要素の幅を40pxに */
+  height: 40px;                  /* 要素の高さを40pxに */
+  margin: 40px auto;             /* 外余白を上下40px、左右自動に */
+}

@@ -1,0 +1,60 @@
+@charset "UTF-8";
+.wrapper {
+  max-width: 960px;               /* 最大の画面幅を960pxに */
+  margin: 0 auto;                 /* 外余白を上下0、左右自動に */
+  padding: 0 4%;                  /* 内余白を上下0、左右4%に */
+}
+
+.lead {
+  padding: 30px 0;                /* 内余白を上下30px、左右0に */
+}
+
+@media print, screen and (min-width: 768px) {
+  .lead {
+    width: 800px;                 /* 要素幅を800pxに */
+    margin: 0 auto;               /* 外余白を上下0、左右自動に */
+    text-align: center;           /* 文字を中央揃えに */
+  }
+}
+
+.img-link-wrap {
+  margin-bottom: 40px;            /* 下外余白を40pxに */
+}
+
+@media print, screen and (min-width: 768px) {
+  .img-link-wrap {
+    display: -webkit-flex;        /* 子要素を並列に */
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 80px;          /* 外余白の下部を80pxに */
+  }
+  .img-link {
+    width: 50%;                   /* 要素幅を50%に */
+  }
+}
+
+.img-link a {
+  display: block;                /* 表示形式をブロックに */
+  position: relative;            /* 要素の配置を相対座標に指定 */
+  z-index: 1;                    /* 要素を重ねて表示する際の優先順度を1に */
+}
+
+.img-link a .heading02 {
+  color: #fff;                   /* 文字色を白色に */
+  z-index: 2;                    /* 要素を重ねて表示する際の優先順度を2に */
+  position: absolute;            /* 要素の配置を絶対座標に */
+  width: 100%;                   /* 要素の幅を100%に */
+  top: 50%;                      /* 上部分を基準点から50%の位置に */
+  left: 0;                       /* 左部分を基準点から0の位置に */
+  -webkit-transform: translate(0, -50%); /* 要素の位置を50%分だけ上に */
+  transform: translate(0, -50%);
+  margin-bottom: 0;
+}
+
+.img-link a .heading02 span {
+  border-color: #fff;            /* 罫線を白色に */
+}
+
+.img-link a img {
+  display: block;                /* 表示形式をブロックに */
+}

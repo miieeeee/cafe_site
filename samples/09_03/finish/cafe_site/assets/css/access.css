@@ -1,0 +1,88 @@
+@charset "UTF-8";
+.header.header-access {
+  background: url(../img/access/hero_access.jpg) no-repeat center center/cover; /* 背景画像を指定 */
+}
+
+.wrapper {
+  max-width: 960px;               /* 最大の画面幅を960pxに */
+  margin: 0 auto;                 /* 外余白を上下0、左右自動に */
+  padding: 0 4%;                  /* 内余白を上下0、左右4%に */
+}
+
+.section-access {
+  padding: 30px 0 50px;           /* 内余白を上30px、左右0、下50pxに */
+}
+
+@media print, screen and (min-width: 768px) {
+  .section-access {
+    padding: 60px 0 100px;         /* 内余白を上60px、左右0、下100pxに */
+    max-width: 700px;              /* 最大幅を700pxに */
+    margin: 0 auto;                /* 外余白を上下0、左右自動に */
+  }
+}
+
+.access-img {
+  margin-bottom: 15px;            /* 外余白の下部を15pxに */
+}
+
+@media print, screen and (min-width: 768px) {
+  .access-img {
+    width: 50%;                   /* 要素の幅を50%に */
+    max-width: 300px;             /* 要素の最大幅を300pxに */
+    padding-right: 20px;          /* 内余白の右部を20pxに */
+  }
+}
+
+.address {
+  margin-bottom: 20px;            /* 外余白の下部を20pxに */
+}
+
+.address dt {
+  font-size: 12px;                /* 文字サイズを12pxに */
+  margin-bottom: 10px;            /* 外余白の下部を10pxに */
+}
+
+.access-name {
+  font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif; /* フォントの種類を指定 */
+  font-size: 20px;             /* 文字サイズを20pxに */
+  font-weight: bold;           /* 文字を太字に */
+  margin-bottom: 15px;         /* 外余白の下部を15pxに */
+}
+
+.address-text {
+  font-size: 14px;             /* 文字サイズを14pxに */
+  line-height: 1.67;           /* 行の高さをフォントサイズの1.67倍に */
+  margin-bottom: 10px;         /* 外余白の下部を10pxに */
+}
+
+.address-contact {
+  font-size: 12px;             /* 文字サイズを12pxに */
+  line-height: 1.5;            /* 行の高さをフォントサイズの1.5倍に */
+}
+
+@media print, screen and (min-width: 768px) {
+  .access-block {
+    display: -webkit-flex;        /* 子要素を並列に */
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;      /* 並列になった要素の幅を均等に */
+    margin-bottom: 40px;          /* 外余白の下部を40pxに */
+  }
+}
+
+.map {
+  position: relative;          /* 要素の配置を相対座標に指定 */
+  width: 100%;                 /* 要素の幅を100%に */
+  height: 0;                   /* 要素の高さ0に */
+  padding-bottom: 75%;         /* 内余白の下部を75%に */
+}
+
+.map iframe {
+  width: 100%;                 /* 要素の幅を100%に */
+  height: 100%;                /* 要素の高さ0に */
+  position: absolute;          /* 要素の配置を絶対座標に指定 */
+  top: 0;                      /* 上部分を基準点から0の位置に */
+  left: 0;                     /* 左部分を基準点から0の位置に */
+  bottom: 0;                   /* 下部分を基準点から0の位置に */
+  right: 0;                    /* 右部分を基準点から0の位置に */
+}
